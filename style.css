@@ -1,0 +1,76 @@
+@font-face {
+    font-family:poetsenOne;
+    src: url(fonts/PoetsenOne-Regular.ttf);
+}
+
+
+h1{
+    font-family:PoetsenOne;
+    text-align: center;
+    color: rgb(0, 136, 255);
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+}
+body{
+    background-color:white;
+    font-family: poetsenOne;
+    color:black;
+    
+}
+.TableContainer{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px rgb(205, 232, 255);
+    margin: 5% 20%;
+}
+.TableRow{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between ;
+  align-items: center;
+  margin: 10px;
+  padding: 2%;
+  border: solid 1px rgb(205, 232, 255);
+}
+.TableContainer :hover{
+    background-color:aliceblue;
+}
+div{
+    display: inline;
+}
+.elem{
+    margin:2% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+}
+.photo{
+    width: 50px;
+    height: 50px;
+}
+.trash{
+    width: 20px;
+    height: 20px;
+}
+.edit{
+    width: 20px;
+    height: 20px;
+}
+.info{
+    width: 20px;
+    height: 20px;
+}
+button{
+    margin: 0% 1%;
+    border: 1px solid rgb(205, 232, 255);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+}
+button:hover{
+    background-color:aliceblue;
+    box-shadow: 1px 1px 1px 1px aliceblue;
+    background-color: rgb(106, 185, 255);
+    cursor: pointer;
+}
