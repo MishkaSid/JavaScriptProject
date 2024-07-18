@@ -22,7 +22,7 @@ body{
     display: flex;
     flex-direction: column;
     border: solid 1px rgb(205, 232, 255);
-    margin: 5% 20%;
+    margin: 0.3% 20%;
 }
 .TableRow{
   display: flex;
@@ -70,7 +70,41 @@ button{
 }
 button:hover{
     background-color:aliceblue;
-    box-shadow: 1px 1px 1px 1px aliceblue;
+    box-shadow: 1px 1px rgb(8, 24, 37);
     background-color: rgb(106, 185, 255);
     cursor: pointer;
+    opacity: 0.8;
 }
+.buttonAdd{
+    margin-left: 75%;
+    border: 1px solid rgb(205, 232, 255);
+    border-radius: 5px;
+    background-color: rgb(205, 232, 255); 
+}
+#add{
+    width: 25px;
+    height: 25px;
+}
+.popup{
+    display: none;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    height: 10%;
+    padding: 5%;
+    border-radius: 30px;
+    border: 1px solid rgb(205, 232, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+input{
+    width: 100%;
+    padding: 0.5%;
+    border: 1px solid rgb(205, 232, 255);
+    border-radius: 5px;
+    background-color: aliceblue;
+    margin: 1% 0%;
+}
+
