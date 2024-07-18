@@ -1,60 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="Project_JS.js"></script>
     <link rel="stylesheet" href="ProjectStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <h1>phone book</h1>
-
+<button class="buttonAdd" onclick="OpenPopup()"><img id="add" src="icons/add-user.png"></button>
 <container class="TableContainer">
-
-    <container class="TableRow">
-        <div><p class="elem"><img class="photo" src="icons/user.png" alt="photo"></p></div>
-        <div><p class="elem">name lastname</p></div>
-        <div><p class="elem">phone number</p></div>
-        <div><p class="elem">
-            <button class="buttonTrash" onclick="OnClickTrash()"><img class="trash" src="icons/trash.png" alt="delete"></button>
-            <button class="buttonEdit"  onclick="OnClickEdit()"><img class="edit" src="icons/editing.png" alt="edit"></button>
-            <button class="buttonInfo" onclick="OnClickInfo()"><img class="info" src="icons/info.png" alt="info"></button>
-        </p></div>
-    </container>
-    <container class="TableRow">
-        <div><p class="elem"><img class="photo" src="icons/user.png" alt="photo"></p></div>
-        <div><p class="elem">name lastname</p></div>
-        <div><p class="elem">phone number</p></div>
-        <div><p class="elem">
-            <button class="buttonTrash" onclick="OnClickTrash()"><img class="trash" src="icons/trash.png" alt="delete"></button>
-            <button class="buttonEdit"  onclick="OnClickEdit()"><img class="edit" src="icons/editing.png" alt="edit"></button>
-            <button class="buttonInfo" onclick="OnClickInfo()"><img class="info" src="icons/info.png" alt="info"></button>
-        </p></div>
-    </container>
-    <container class="TableRow">
-        <div><p class="elem"><img class="photo" src="icons/user.png" alt="photo"></p></div>
-        <div><p class="elem">name lastname</p></div>
-        <div><p class="elem">phone number</p></div>
-        <div><p class="elem">
-            <button class="buttonTrash" onclick="OnClickTrash()"><img class="trash" src="icons/trash.png" alt="delete"></button>
-            <button class="buttonEdit"  onclick="OnClickEdit()"><img class="edit" src="icons/editing.png" alt="edit"></button>
-            <button class="buttonInfo" onclick="OnClickInfo()"><img class="info" src="icons/info.png" alt="info"></button>
-        </p></div>
-    </container>
-    <container class="TableRow">
-        <div><p class="elem"><img class="photo" src="icons/user.png" alt="photo"></p></div>
-        <div><p class="elem">name lastname</p></div>
-        <div><p class="elem">phone number</p></div>
-        <div><p class="elem">
-            <button class="buttonTrash" onclick="OnClickTrash()"><img class="trash" src="icons/trash.png" alt="delete"></button>
-            <button class="buttonEdit"  onclick="OnClickEdit()"><img class="edit" src="icons/editing.png" alt="edit"></button>
-            <button class="buttonInfo" onclick="OnClickInfo()"><img class="info" src="icons/info.png" alt="info"></button>
-        </p></div>
-    </container>
 </container>
+<div class="popup" id="popup">
+<input type="text" id="name" placeholder="name">
+<input type="text" id="lastName" placeholder="last name">
+<input type="number" id="phone" placeholder="phone">
+<input type="text" id="email" placeholder="email">
+<input type="text" id="address" placeholder="address">
+<button class="buttonAdd" onclick="add()">Add</button>
+</div>
+<div class="info" id="info">
+</div>
 
-    
+</div>
+
+<script defer src="Project_JS.js"></script> 
 </body>
 </html>
