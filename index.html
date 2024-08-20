@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="ProjectStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PhoneBook</title>
 </head>
 <body>
     <h1>phone book</h1>
-<button class="buttonAdd" onclick="OpenPopup()"><img id="add" src="icons/add-user.png"></button>
+    <input type="text" id="search" placeholder="Search">
+<button class="buttonAdd" onclick=OpenPopup()><img id="add" src="icons/add-user.png"></button>
+<button class="buttonDeleteAll" onclick=deleteAll()><img id="deleteAll" src="icons/trash.png"></button>
 <container class="TableContainer">
 </container>
-<div class="popup" id="popup">
-<input type="text" id="name" placeholder="name">
-<input type="text" id="lastName" placeholder="last name">
-<input type="number" id="phone" placeholder="phone">
-<input type="text" id="email" placeholder="email">
-<input type="text" id="address" placeholder="address">
-<button class="buttonAdd" onclick="add()">Add</button>
+
+<div class="popup" id="popupAdd">
+    <button class="closeBtn" onclick="closePopup()">×</button>
+    <div class="titleBar">Add New Contact</div>
+    <input type="text" id="name" placeholder="Name">
+    <input type="number" id="phone" placeholder="Phone">
+    <input type="text" id="email" placeholder="Email">
+    <input type="text" id="address" placeholder="Address">
+    <button class="buttonPopup" onclick="add()">Add</button>
 </div>
-<div class="info" id="info">
+<div class="popup" id="popupEdit">
+    <button class="closeBtn" onclick="closePopupEdit()">×</button>
+    <div class="titleBar">Edit Contact</div>
+    <input type="text" id="name" placeholder="Name">
+    <input type="number" id="phone" placeholder="Phone">
+    <input type="text" id="email" placeholder="Email">
+    <input type="text" id="address" placeholder="Address">
+    <button class="buttonPopup" onclick="OnClickEdit()">Change</button>
 </div>
 
-</div>
+ <div class="popup" id="popupInfo">  
+ </div>
 
+<button class="darkMode" onclick="darkMode()">O</button>
+<footer>&copy; 2024 Phone Book All Rights Reserved<br>Created By:Michael Sidoruk , Nadav Sayag</footer>
 <script defer src="Project_JS.js"></script> 
 </body>
 </html>
