@@ -1,100 +1,135 @@
 @font-face {
-    font-family:poetsenOne;
+    font-family: poetsenOne;
     src: url(fonts/PoetsenOne-Regular.ttf);
 }
 
-h1{
-    font-family:PoetsenOne;
+/* Styles for the main header */
+h1 {
+    font-family: PoetsenOne;
     text-align: center;
     color: rgb(0, 136, 255);
     font-weight: bold;
     font-size: 50px;
     margin-top: 10px;
 }
-body{
-    background-color:white;
+
+/* General body styles */
+body {
+    background-color: white;
     font-family: poetsenOne;
-    color:black;
+    color: black;
 }
-.TableContainer{
+
+/* Container for the contact list */
+.TableContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     border: solid 2px rgb(70, 145, 224);
     margin: 0.3% 20%;
 }
-.TableRow{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between ;
-  align-items: center;
-  margin: 10px;
-  padding: 2%;
-  border: solid 1px rgb(70, 145, 224);
+
+/* Styles for each contact row */
+.TableRow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 2%;
+    border: solid 1px rgb(70, 145, 224);
 }
-.TableContainer :hover{
-    background-color:rgb(190, 225, 255);
+
+/* Hover effect for the contact list container */
+.TableContainer :hover {
+    background-color: rgb(190, 225, 255);
 }
-div{
+
+/* Default styles for div elements */
+div {
     display: inline;
 }
-.elem{
-    margin:2% 10%;
+
+/* Styles for elements within a contact row */
+.elem {
+    margin: 2% 10%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between ;
+    justify-content: space-between;
 }
-.photo{
+
+/* Styles for the contact photo */
+.photo {
     width: 50px;
     height: 50px;
 }
-.trash{
+
+/* Styles for the trash icon */
+.trash {
     width: 20px;
     height: 20px;
 }
-.nightMode{
+
+/* Styles for the dark mode icon */
+.nightMode {
     width: 40px;
     height: 40px;
 }
-.edit{
+
+/* Styles for the edit icon */
+.edit {
     width: 20px;
     height: 20px;
 }
-.info{
+
+/* Styles for the info icon */
+.info {
     width: 20px;
     height: 20px;
 }
-#search{
+
+/* Styles for the search input box */
+#search {
     border: 1px solid rgb(205, 232, 255);
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0);
     width: 40%;
     margin-left: 20%;
 }
-button{
+
+/* General styles for buttons */
+button {
     border: 1px solid rgb(205, 232, 255);
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0);
 }
-button:hover{
+
+/* Hover effect for buttons */
+button:hover {
     box-shadow: 0.5px 0.5px rgb(8, 24, 37);
     background-color: rgb(0, 105, 217);
     cursor: pointer;
     opacity: 0.8;
 }
-.buttonDeleteAll{
+
+/* Specific styles for the delete all button */
+.buttonDeleteAll {
     border: 1px solid rgb(205, 232, 255);
     border-radius: 5px;
     background-color: rgb(205, 232, 255);
 }
-.buttonAdd{
+
+/* Specific styles for the add button */
+.buttonAdd {
     border: 1px solid rgb(205, 232, 255);
     border-radius: 5px;
-    background-color: rgb(205, 232, 255); 
+    background-color: rgb(205, 232, 255);
     margin-left: 13%;
 }
-.buttonPopup{
+
+/* Styles for buttons inside popups */
+.buttonPopup {
     font-family: poetsenOne;
     text-transform: capitalize;
     width: 100%;
@@ -103,7 +138,9 @@ button:hover{
     border-radius: 5px;
     background-color: rgb(205, 232, 255);
 }
-#popupInfo{
+
+/* Styles for the popup displaying contact information */
+#popupInfo {
     display: none;
     flex-wrap: wrap;
     position: absolute;
@@ -112,14 +149,20 @@ button:hover{
     background-color: rgb(205, 232, 255);
     font-family: poetsenOne;
 }
-#add{
+
+/* Styles for the add icon */
+#add {
     width: 25px;
     height: 25px;
 }
-#deleteAll{ 
+
+/* Styles for the delete all icon */
+#deleteAll {
     width: 25px;
     height: 25px;
 }
+
+/* General styles for popup containers */
 .popup {
     border: 1px solid rgb(205, 232, 255);
     background-color: rgba(255, 255, 255, 0.9); /* Light, semi-transparent background */
@@ -134,6 +177,8 @@ button:hover{
     z-index: 1000; /* Ensure it appears on top of other elements */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
 }
+
+/* Title bar styles inside popups */
 .popup .titleBar {
     font-size: 20px;
     font-weight: bold;
@@ -141,6 +186,8 @@ button:hover{
     margin-bottom: 20px;
     text-align: center;
 }
+
+/* Styles for input fields inside popups */
 .popup input {
     width: 100%;
     padding: 10px;
@@ -152,6 +199,8 @@ button:hover{
     box-sizing: border-box; /* Ensures padding doesn't affect width */
     font-size: 16px;
 }
+
+/* Styles for the add button inside popups */
 .popup .buttonAdd {
     width: 100%;
     padding: 10px;
@@ -162,12 +211,15 @@ button:hover{
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
-    
 }
+
+/* Hover effect for the add button inside popups */
 .popup .buttonAdd:hover {
     background-color: rgb(0, 105, 217);
     transition: background-color 3s ease;
 }
+
+/* Close button styles inside popups */
 .popup .closeBtn {
     position: absolute;
     top: 10px;
@@ -180,10 +232,14 @@ button:hover{
     padding: 0;
     line-height: 1;
 }
+
+/* Hover effect for close button inside popups */
 .popup .closeBtn:hover {
     color: rgb(255, 100, 100); /* Changes color on hover to indicate it's clickable */
 }
-input{
+
+/* General styles for input fields */
+input {
     width: 100%;
     padding: 0.5%;
     border: 1px solid rgb(205, 232, 255);
@@ -191,30 +247,36 @@ input{
     background-color: aliceblue;
     margin: 1% 0%;
 }
-footer{
+
+/* Styles for the footer */
+footer {
     text-align: center;
     font-size: 0.75em;
-    margin: 1% 0%; 
+    margin: 1% 0%;
 }
-.darkMode{
-   position: absolute;
+
+/* Styles for the dark mode button */
+.darkMode {
+    position: absolute;
     top: 5px;
     right: 5px;
     width: 50px;
     height: 50px;
     cursor: pointer;
 }
-@media only screen and (max-width:400px)
-{
-    .popup{
+
+/* Responsive styles for small screens */
+@media only screen and (max-width:400px) {
+    .popup {
         width: 100%;
     }
     
-    .photo{
+    .photo {
         width: 30px;
         height: 30px;
     }
-    .buttonAdd{
+    
+    .buttonAdd {
         margin-left: 0%;
     }
 }
